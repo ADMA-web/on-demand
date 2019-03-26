@@ -1,0 +1,59 @@
+.ad-banner {
+	font-family: 'Roboto', Arial, sans-serif;
+	text-align: center;
+}
+.ad-banner h1 {
+	font-size: 2em;
+}
+.button {
+	background-color: #c00;
+	color: #fff;
+	font-size: 1em;
+	margin-bottom: 0.5rem;
+
+	border-radius: 0.25em;
+  border: 0;
+  box-shadow: 0 -0.125em rgba(0,0,0,0.25) inset;
+  display: inline-block;
+  line-height: 1;
+  min-height: 3em;
+  min-width: 9em;
+  padding: 1em 2em;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -webkit-transition-property: background-color, background-image, border-color, box-shadow, color, opacity, text-shadow, -webkit-transform;
+  transition-property: background-color, background-image, border-color, box-shadow, color, opacity, text-shadow, -webkit-transform;
+  transition-property: background-color, background-image, border-color, box-shadow, color, opacity, text-shadow, transform;
+  transition-property: background-color, background-image, border-color, box-shadow, color, opacity, text-shadow, transform, -webkit-transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.button:hover {
+	background-color: #333 !important;
+	color: #fff;
+}
+
+/* Helpers */
+.has-background-green {
+	background-color: #52A82D !important;
+}
+.has-background-red {
+	background-color: #c00 !important;
+}
+
+/* Override */
+
+body {
+	background: #f2f2f2 !important;
+}
+
+.highlight-reel-carousel .flickity-page-dots .dot {
+	background: #c00;
+}
+.highlight-reel-carousel .flickity-page-dots .dot.is-selected {
+	background-color: #c00;
+}
