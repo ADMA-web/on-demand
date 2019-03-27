@@ -17,6 +17,7 @@
 
 function main() {
 	if( $( '#logoutForm' ).length === 0 ) { spawnLoginBtn(); } // create a login button if user is not logged in
+	appendChannelClass(); // append channel-specific class to body, when on a Channel page
 }
 
 function spawnLoginBtn() {
@@ -26,4 +27,20 @@ function spawnLoginBtn() {
 	const loginBtn = `<a id="loginBtn" class="button button--cta has-background-red" href="https://www.adma.com.au/user/login">Login via ADMA</a>`;
 	if( navList.length === 0 ) { nav.append( `<ul class="nav-main-list"><li>${ loginBtn }</li></ul>` ); }
 	else { navList.append( `<li>${ loginBtn }</li>` ); }
+}
+
+function appendChannelClass() {
+	const channels = {
+		'DD19': {
+			uri: '://on-demand.adma.com.au/Channel/DataDay2019'
+		}
+	}
+
+	if( document.documentURI.includes( channels['DD19'].uri ) ) { // only using one for now
+		console.log( 'data day channel detected' );
+		$( 'body' ).addClass( 'data-day' );
+	}
+	else {
+		console.log( 'no channel detected' );
+	}
 }

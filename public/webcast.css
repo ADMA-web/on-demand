@@ -31,6 +31,7 @@ body {
     background-color: #333 !important;
     color: #fff; }
 
+/* Data Day Channel styles */
 /* Mediasite components */
 .ad-banner {
   font-family: 'Roboto', Arial, sans-serif;
@@ -45,7 +46,7 @@ body {
 .has-background-red {
   background-color: #c00 !important; }
 
-/* Override */
+/* Site header */
 main .main-header {
   display: flex;
   align-items: center;
@@ -55,6 +56,23 @@ main .main-header {
     width: unset;
     max-width: 300px; }
 
+/* Menu */
+.nav-main-list {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .nav-main-list form.navbar-right .nav-main-item {
+    max-width: 300px;
+    text-align: center;
+    word-break: break-all; }
+  .nav-main-list .button#loginBtn {
+    margin-right: 2em; }
+
+@media all and (max-width: 641px) {
+  .nav-main-list .button#loginBtn {
+    margin-right: 0; } }
+
+/* Highlight reel */
 section.t-background-highlight-reel {
   background: #fff !important;
   border-bottom: 1px solid rgba(140, 140, 140, 0.375); }
@@ -73,6 +91,7 @@ section.t-background-highlight-reel {
 section.section {
   background: #f2f2f2; }
 
+/* Video Card */
 .card-list .card-list-item .card.t-background-light {
   background-color: #fff; }
 
@@ -93,18 +112,3 @@ section.section {
 
 .card-list .card-list-item .card-link.card-link:hover:after {
   opacity: 1; }
-
-.nav-main-list {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .nav-main-list form.navbar-right .nav-main-item {
-    max-width: 300px;
-    text-align: center;
-    word-break: break-all; }
-  .nav-main-list .button#loginBtn {
-    margin-right: 2em; }
-
-@media all and (max-width: 641px) {
-  .nav-main-list .button#loginBtn {
-    margin-right: 0; } }
