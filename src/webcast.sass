@@ -1,0 +1,128 @@
+$red: #c00
+$green: #52A82D
+
+$desktop: 641px
+
+/* ADMA theme */
+body 
+	background: #f2f2f2 !important
+	font-family: 'Roboto', Arial, sans-serif
+
+.button 
+	background-color: #c00
+	color: #fff
+	font-size: 1em
+	margin-bottom: 0.5rem
+
+	border-radius: 0.25em
+	border: 0
+	box-shadow: 0 -0.125em rgba(0,0,0,0.25) inset
+	display: inline-block
+	line-height: 1
+	min-height: 3em
+	min-width: 9em
+	padding: 1em 2em
+	text-align: center
+	text-decoration: none
+	white-space: nowrap
+	-webkit-transition-duration: 0.1s
+	transition-duration: 0.1s
+	-webkit-transition-property: background-color, background-image, border-color, box-shadow, color, opacity, text-shadow, -webkit-transform
+	transition-property: background-color, background-image, border-color, box-shadow, color, opacity, text-shadow, -webkit-transform
+	transition-property: background-color, background-image, border-color, box-shadow, color, opacity, text-shadow, transform
+	transition-property: background-color, background-image, border-color, box-shadow, color, opacity, text-shadow, transform, -webkit-transform
+	-webkit-transition-timing-function: ease-out
+	transition-timing-function: ease-out
+
+	&:hover 
+		background-color: #333 !important
+		color: #fff
+
+
+/* Mediasite components */
+.ad-banner 
+	font-family: 'Roboto', Arial, sans-serif
+	text-align: center
+
+	& h1 
+		font-size: 2em
+
+
+/* Helpers */
+.has-background-green 
+	background-color: #52A82D !important
+
+.has-background-red 
+	background-color: #c00 !important
+
+
+/* Override */
+main .main-header
+	display: flex
+	align-items: center
+	border-bottom: 0.375em solid $red
+	padding: 1em 0
+
+	& .masthead
+		width: unset
+		max-width: 300px
+
+section.t-background-highlight-reel
+	background: #fff !important
+	border-bottom: 1px solid rgba(140,140,140,0.375)
+	& .content--top
+		padding-bottom: 2.25rem
+
+.highlight-reel-carousel
+
+	& .highlight-reel-carousel-item
+		padding: 0 0.15rem
+
+	& .flickity-page-dots
+		& .dot 
+			background: $red
+		& .dot.is-selected
+			background-color: $red
+
+section.section
+	background: #f2f2f2
+
+.card-list
+	& .card-list-item
+		& .card.t-background-light 
+			background-color: #fff
+		& .card-link
+			&.card-link:after 
+				content: ""
+				-webkit-transition: opacity 0.3s ease
+				transition: opacity 0.3s ease
+				background: transparent no-repeat 50%
+				background-size: 75px
+				background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3Elarge play icon%3C/title%3E%3Cpath fill='%23ffffff' d='M50,94 C74.300529,94 94,74.300529 94,50 C94,25.699471 74.300529,6 50,6 C25.699471,6 6,25.699471 6,50 C6,74.300529 25.699471,94 50,94 Z M50,100 C22.3857625,100 0,77.6142375 0,50 C0,22.3857625 22.3857625,0 50,0 C77.6142375,0 100,22.3857625 100,50 C100,77.6142375 77.6142375,100 50,100 Z M37.7001599,31.7050563 L37.7001599,68.2933447 L68.2237591,49.9992005 L37.7001599,31.7050563 Z M36.0006195,24.3832805 L75.222407,47.8743585 C76.8610098,48.8557657 76.8610098,51.1426353 75.222407,52.1240426 L36.0006195,75.6151206 C34.2590467,76.6581996 32,75.4583561 32,73.4902785 L32,26.5081225 C32,24.5400449 34.2590467,23.3402014 36.0006195,24.3832805 Z'%3E%3C/path%3E%3C/svg%3E")
+				background-position-y: 20%
+				position: absolute
+				top: 0
+				bottom: 0
+				left: 0
+				right: 0
+				opacity: 0
+			&.card-link:hover:after
+				opacity: 1
+
+.nav-main-list 
+	display: flex
+	align-items: center
+	justify-content: center
+
+	& form.navbar-right .nav-main-item
+		max-width: 300px
+		text-align: center
+		word-break: break-all
+
+	& .button#loginBtn
+		margin-right: 2em
+
+
+@media all and (max-width: $desktop)
+	.nav-main-list .button#loginBtn
+		margin-right: 0

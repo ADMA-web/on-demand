@@ -1,0 +1,32 @@
+{
+  "name": "on-demand",
+  "version": "1.0.0",
+  "description": "styles and scripts for on-demand.adma.com.au",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ADMA-web/on-demand.git"
+  },
+  "keywords": [
+    "css",
+    "js",
+    "html"
+  ],
+  "author": "FarrenRE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ADMA-web/on-demand/issues"
+  },
+  "homepage": "https://github.com/ADMA-web/on-demand#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.11.0"
+  }
+}
